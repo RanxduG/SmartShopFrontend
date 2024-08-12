@@ -25,7 +25,14 @@ const WelcomeBanner = () => {
 
   return (
     <div className='welcomebanner'>
+      
       <div className='slideshow' style={{ backgroundImage: `url(${slides[currentSlide]})` }}>
+      <div className='welcome-message'>
+        <h1>Welcome to Smart Shopping Assistant</h1>
+        <div>
+          <p>Please login to continue. <button><Link to='/loginsignup/login'>Login</Link></button></p>
+        </div>
+      </div>
         <div className='dots'>
           {slides.map((_, index) => (
             <span
@@ -34,12 +41,6 @@ const WelcomeBanner = () => {
               onClick={() => handleDotClick(index)}
             />
           ))}
-        </div>
-      </div>
-      <div className='welcome-message'>
-        <h1>Welcome to Smart Shopping Assistant</h1>
-        <div>
-          <p>Please login to continue. <button><Link to='/loginsignup/login'>Login</Link></button></p>
         </div>
       </div>
     </div>
