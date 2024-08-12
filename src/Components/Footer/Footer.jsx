@@ -15,7 +15,7 @@ const Footer = () => {
     <div className='footer'>
         <div className="footer-logo">
             <img src={footer_logo} alt="" />
-            <p>Smart Shopping Assistant Test</p>
+            <p>Smart Shopping Assistant Test1</p>
         </div>
         <ul className="footer-links">
             <Link onClick={handleClick()}><li>Company</li></Link>
